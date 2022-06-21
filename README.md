@@ -1,4 +1,5 @@
 # youtube-to-tiktok-bot
 converts YouTube videos for tiktok using python
 ## Demo
-<video src="https://raw.githubusercontent.com/mafuth/youtube-to-tiktok-bot/main/output/example.mp4" controls muted></video>
+
+https://user-images.githubusercontent.com/57235839/174889530-e1534d44-4500-4b75-856b-08246ff10580.mp4
