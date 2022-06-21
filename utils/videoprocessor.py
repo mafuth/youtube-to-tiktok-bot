@@ -22,12 +22,12 @@ class processVideo:
             background_clip.write_videofile("assets/final.mp4")
             cuts = 1
             start_time = 0
-            while cuts < totalClips:
+            while cuts != totalClips+1:
                 end_time = 180 * cuts
                 ffmpeg_extract_subclip("assets/final.mp4", start_time, end_time, targetname="assets/Part"+str(cuts)+".mp4")
                 title = "Part_"+str(cuts)
                 originalPath = "assets/Part"+str(cuts)+".mp4"
-                outputPath = "../output/Part_"+str(cuts)+".mp4"
+                outputPath = "output/Part_"+str(cuts)+".mp4"
                 w = "(w-text_w)/2"
                 h = "0"
                 os.system(f"""ffmpeg -i {originalPath} -vf drawtext="fontfile=assets/font.ttf: \
